@@ -34,7 +34,7 @@ header {
   grid-area:head;
   text-align: center;
   color: white;
-
+  font-family: "Nunito";
   background-color:rgb(0,0,0) ;opacity: 0.0;
 }
 
