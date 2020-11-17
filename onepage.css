@@ -1,11 +1,28 @@
 
 
 
+@media screen and (min-width: 0px){
+    #pagewrap
+      display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 5fr 1fr 4fr 5fr 9fr 5fr 1fr;
+          grid-template-areas:
+          "head head head head head"
+          "hero hero hero hero hero"
+          "os os os os os"
+          "video video video video video "
+          "guide guide guide guide guide"
+          "produkt produkt produkt produkt produkt "
+          "sup sup sup sup sup "
+          "footer footer footer footer footer "
+          ;
 
 
 
 
+}
 
+/*
 @media screen and (min-width: 800px){
     #pagewrap
       display: grid;
@@ -25,22 +42,71 @@
           grid-template-areas:
 
 }
-
+*/
 body {
   font-family: "Roboto";
+  color: Black;
+
+  background-image: url(baggrund.webp);
+  background-size: cover;
+  margin-right: auto;
+}
+.responsiv{
+  max-width: 100%;
+  height: auto;
+}
+.tekst{
+  text-align: center;
+}
+.tguide{
+  text-align: left;
+}
+.hero{
+  grid-area: hero;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(sko2.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#produkt BUTTON{
+  text-align: center;
+}
+
+.hero h2{
+  grid-area: heroh2;
+  font-size: 7em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
   color: white;
+}
+
+#sup h4{
+  font-size: 2em;
+  text-align: center;
 }
 
 header {
-  grid-area:head;
+  grid-area: head;
   text-align: center;
   color: white;
   background-color:rgb(0,0,0) ;opacity: 0.0;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-right: 0em;
 }
+
 
 div header nav li{
   background-color:rgb(0,0,0) ;opacity: 0.5;
-
+  grid-area: menu;
 }
 
 div header nav li a: hover{
@@ -48,8 +114,42 @@ div header nav li a: hover{
   text-decoration: underline;
 }
 
+#overskrift{
+  grid-area: os;
+  text-align: center;
+}
+
+#overskrift h1{
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+#overskrift p{
+  margin-top: auto;
+  font-size: 0.9em;
+}
+
+#guide{
+  grid-area: guide;
+}
+
+#produkt{
+  grid-area: produkt;
+}
+
+#sup{
+  grid-area: sup;
+
+}
+
+ #video{
+  grid-area: video;
+}
+
 /* Style the navigation menu */
 .topnav {
+  grid-area: topnav;
   overflow: hidden;
   background-color: #333;
   position: relative;
@@ -91,7 +191,7 @@ div header nav li a: hover{
 }
 
 footer {
-    grid-area: foot;
+  grid-area: footer;
     text-align: left;
     background-color: white;
     color: Black;
