@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px){
+    #pagewrap
+      display: grid;
+          grid-template-columns:
+          grid-template-rows:
+          grid-template-areas:
+
+}
+
+
+
+@media screen and (min-width: 1000px){
+    #pagewrap
+      display: grid;
+          grid-template-columns:
+          grid-template-rows:
+          grid-template-areas:
+
+}
+
+body {
+  font-family: "Roboto";
+}
+
+header {
+  grid-area:head;
+  text-align: center;
+  color: white;
+
+  background-color:rgb(0,0,0) ;opacity: 0.0;
+}
+
+footer {
+    grid-area: foot;
+    text-align: left;
+    background-color: white;
+    color: Black;
+    padding: 0.1em;
+}
