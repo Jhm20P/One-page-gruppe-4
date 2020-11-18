@@ -20,6 +20,34 @@
 
 }
 
+#logo {
+    position: absolute;
+    right: 42%;
+    grid-area: logo;
+    padding-top: 1em;
+    background-color: #f8f9fa;
+    max-width: 100px;
+    margin-top: -0.5em;
+}
+
+.navbar-toggler {
+    grid-area: navbar;
+}
+
+#menu {
+    width: 100%;
+    background-color: #f8f9fa;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "navbar logo"
+        ;
+}
+
+.navbar {
+    margin-right: 5em;
+}
+
 /*
 @media screen and (min-width: 800px){
     #pagewrap
@@ -41,6 +69,11 @@
 
 }
 */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
   font-family: "Nunito";
   font-style: italic
@@ -66,16 +99,16 @@ body {
   margin-right: auto;
 }
 
-.responsiv{
-  max-width: 10%;
-  height: auto;
-  position: absolute;
-  bottom: auto;
 
+
+
+footer a {
+    color: black;
 }
 
-#footer{
-  position: relative;
+footer a:hover{
+    color: black;
+    font-style: italic;
 }
 
 .tekst{
@@ -85,6 +118,7 @@ body {
   text-align: left;
 }
 .hero{
+  margin-top:
   grid-area: hero;
   min-height: 60vh;
   width: 100%;
@@ -92,16 +126,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Roboto";
+  color: white;
   background-image: url(sko2.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-
-#menu {
- background-color: white;
 
 }
 /*
@@ -119,7 +151,7 @@ body {
 .hero h2{
   font-family: "Roboto";
   grid-area: heroh2;
-  font-size: 4em;
+  font-size: 6em;
   margin-top: 0;
   margin-bottom: 0.5em;
   color: white;
@@ -131,13 +163,11 @@ body {
 }
 
 header {
+    align-content: center center;
+    width: 100%;
   grid-area: head;
   text-align: center;
-  color: white;
-  opacity: 1;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  margin-right: 0em;
+    position: fixed;
 }
 /**
 #globe {
@@ -146,11 +176,7 @@ header {
     float: right;
 }
 **/
-#logo {
-    width: 10px auto;
-    height: 10px auto;
-    float: left;
-}
+
 
 div header nav li{
   background-color:rgb(0,0,0) ;opacity: 0.5;
@@ -163,6 +189,7 @@ div header nav li a: hover{
 }
 
 #overskrift{
+  margin-top: 2em;
   grid-area: os;
   text-align: center;
 }
@@ -176,22 +203,19 @@ div header nav li a: hover{
 
 
 #produkt h3 {
+  margin: 0em 2em 1em 2em;
   text-align: center;
   font-size: 1.8em;
 }
 
 #overskrift p{
   margin-top: auto;
-  font-size: 0.9em;
-}
-
-#forhandler {
-
+  font-size: 1.3em;
 }
 
 #guide{
   grid-area: guide;
-  margin: 2em;
+  margin: 2em 3em 2em 3em;
   padding-bottom: 1em;
   font-size: 1.2em;
   border-color: black;
@@ -200,18 +224,18 @@ div header nav li a: hover{
 }
 
 
-    #knap {
-        grid-area: knap;
-        background-color: #247eb0;
-        color: white;
-        text-align: center;
-        font-size: 2em;
-        box-shadow: 5px 5px 7px black;
-        margin-left: 3em;
-        margin-right: 3em;
-        margin-bottom: 1em;
-        border-style: 10px
-    }
+#knap {
+    grid-area: knap;
+    background-color: #247eb0;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    box-shadow: 5px 5px 7px black;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    border-style: 10px
+}
 
 
 
@@ -234,15 +258,36 @@ div header nav li a: hover{
 
 }
 
+#sbillede {
+    max-height: 50vh;
+    margin-bottom: 3em;
+    box-shadow: 3px 3px 5px black;
+}
+
  #video{
   grid-area: video;
+  margin: 0em 0em 0em 0em;
 }
 
 
+.responsiv{
+  max-width: 10%;
+  height: auto;
+}
+
 footer {
   grid-area: footer;
-    text-align: left;
     background-color: white;
+    border-style: solid;
     color: Black;
-    padding: 0.1em;
+    width: 100%;
+    height: 100%;
+    padding 0 10px;
+    bottom: 0px;
+    right 0px;
+    left: 0px;
+    padding-bottom: 3em;
+}
+
+footer li {
 }
