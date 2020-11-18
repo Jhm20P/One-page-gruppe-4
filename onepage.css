@@ -8,7 +8,7 @@
           grid-template-rows: 1fr 5fr 1fr 4fr 5fr 1fr 9fr 5fr 1fr;
           grid-template-areas:
           "head head head head head"
-          "hero hero hero hero hero"
+          "hero heroh2 heroh2 heroh2  hero"
           ". os os os ."
           "video video video video video"
           "guide guide guide guide guide"
@@ -46,11 +46,38 @@ body {
   font-style: italic
   color: Black;
   background-image: url(baggrund.webp);
-}
-.responsiv{
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
 }
+
+#pbillede{
+  max-width: 80%;
+  max-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sbillede{
+  max-width: 80%;
+  max-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.responsiv{
+  max-width: 10%;
+  height: auto;
+  position: absolute;
+  bottom: auto;
+
+}
+
+#footer{
+  position: relative;
+}
+
 .tekst{
   text-align: center;
 }
@@ -74,9 +101,10 @@ body {
 
 
 #menu {
-    width: auto;
-}
+ background-color: white;
 
+}
+/*
 #menu li {
     display: inline;
     padding: 5px;
@@ -84,12 +112,9 @@ body {
     vertical-align: middle;
     background-color: black;
     font-size: 3em;
-}
+}*/
 
 
-#produkt BUTTON{
-  text-align: center;
-}
 
 .hero h2{
   font-family: "Roboto";
@@ -109,7 +134,7 @@ header {
   grid-area: head;
   text-align: center;
   color: white;
-  background-color:rgb(0,0,0) ;opacity: 0.5;
+  opacity: 1;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   margin-right: 0em;
@@ -122,8 +147,8 @@ header {
 }
 **/
 #logo {
-    max-width: 10%;
-    max-height: auto;
+    width: 10px auto;
+    height: 10px auto;
     float: left;
 }
 
@@ -188,6 +213,12 @@ div header nav li a: hover{
         border-style: 10px
     }
 
+
+
+#knap a:visited{
+  color: white;
+}
+
 #produkt{
   grid-area: produkt;
 }
@@ -207,48 +238,6 @@ div header nav li a: hover{
   grid-area: video;
 }
 
-/* Style the navigation menu */
-.topnav {
-  grid-area: topnav;
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
 
 footer {
   grid-area: footer;
