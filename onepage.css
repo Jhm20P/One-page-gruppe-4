@@ -5,20 +5,18 @@
     #pagewrap
       display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr 5fr 1fr 4fr 5fr 9fr 5fr 1fr;
+          grid-template-rows: 1fr 5fr 1fr 4fr 5fr 1fr 9fr 5fr 1fr;
           grid-template-areas:
           "head head head head head"
           "hero hero hero hero hero"
-          "os os os os os"
-          "video video video video video "
+          ". os os os ."
+          "video video video video video"
           "guide guide guide guide guide"
+        ". knap knap knap ."
           "produkt produkt produkt produkt produkt "
-          "sup sup sup sup sup "
+          ". sup sup sup ."
           "footer footer footer footer footer "
           ;
-
-
-
 
 }
 
@@ -44,12 +42,10 @@
 }
 */
 body {
-  font-family: "Roboto";
+  font-family: "Nunito";
+  font-style: italic
   color: Black;
-
   background-image: url(baggrund.webp);
-  background-size: cover;
-  margin-right: auto;
 }
 .responsiv{
   max-width: 100%;
@@ -63,8 +59,8 @@ body {
 }
 .hero{
   grid-area: hero;
-  width: 100vw;
-  height: 100vh;
+  min-height: 60vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,13 +72,29 @@ body {
   background-attachment: fixed;
 }
 
+
+#menu {
+    width: auto;
+}
+
+#menu li {
+    display: inline;
+    padding: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    background-color: black;
+    font-size: 3em;
+}
+
+
 #produkt BUTTON{
   text-align: center;
 }
 
 .hero h2{
+  font-family: "Roboto";
   grid-area: heroh2;
-  font-size: 7em;
+  font-size: 4em;
   margin-top: 0;
   margin-bottom: 0.5em;
   color: white;
@@ -97,12 +109,23 @@ header {
   grid-area: head;
   text-align: center;
   color: white;
-  background-color:rgb(0,0,0) ;opacity: 0.0;
+  background-color:rgb(0,0,0) ;opacity: 0.5;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   margin-right: 0em;
 }
-
+/**
+#globe {
+    max-height: 10px;
+    max-width: 10px;
+    float: right;
+}
+**/
+#logo {
+    max-width: 10%;
+    max-height: auto;
+    float: left;
+}
 
 div header nav li{
   background-color:rgb(0,0,0) ;opacity: 0.5;
@@ -125,21 +148,58 @@ div header nav li a: hover{
   margin-bottom: auto;
 }
 
+
+
+#produkt h3 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
 #overskrift p{
   margin-top: auto;
   font-size: 0.9em;
 }
 
+#forhandler {
+
+}
+
 #guide{
   grid-area: guide;
+  margin: 2em;
+  padding-bottom: 1em;
+  font-size: 1.2em;
+  border-color: black;
+  border-style: hidden hidden solid hidden;
+
 }
+
+
+    #knap {
+        grid-area: knap;
+        background-color: #247eb0;
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        box-shadow: 5px 5px 7px black;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 1em;
+        border-style: 10px
+    }
 
 #produkt{
   grid-area: produkt;
 }
 
+#produkt p{
+    margin: 1.7em;
+    font-size: 1.2em;
+}
+
 #sup{
   grid-area: sup;
+  align-content: center center;
 
 }
 
