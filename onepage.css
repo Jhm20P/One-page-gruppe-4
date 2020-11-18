@@ -20,6 +20,27 @@
 
 }
 
+
+@media screen and (min-width: 800px){
+    #pagewrap
+      display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 5fr 1fr 4fr 5fr 1fr 9fr 5fr 1fr;
+          grid-template-areas:
+          "head head head head head"
+          "hero heroh2 heroh2 heroh2  hero"
+          ". os os os ."
+          "video video video video video"
+          "guide guide guide guide guide"
+        ". knap knap knap ."
+          "produkt produkt produkt produkt produkt "
+          ". sup sup sup ."
+          "footer footer footer footer footer "
+          ;
+
+
+}
+
 #logo {
     position: absolute;
     right: 42%;
@@ -259,7 +280,10 @@ div header nav li a: hover{
 }
 
 #sbillede {
-    max-height: 50vh;
+    width: 100%;
+    max-width: 130px;
+    height:auto;
+    max-height: 110vh;
     margin-bottom: 3em;
     box-shadow: 3px 3px 5px black;
 }
@@ -267,11 +291,20 @@ div header nav li a: hover{
  #video{
   grid-area: video;
   margin: 0em 0em 0em 0em;
+  max-width: 100%;
+  height:auto;
+
+}
+
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 
 .responsiv{
-  max-width: 10%;
+  width: 10%;
+  max-width: 50px;
   height: auto;
 }
 
