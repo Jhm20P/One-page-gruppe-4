@@ -49,9 +49,14 @@
   padding-bottom: 1em;
   font-size: 1.2em;
   border-color: black;
-  border-style: hidden hidden solid hidden;
-
+  border-style: hidden hidden solid hidden;    
+    
 }
+#produkt p{
+    margin: 1.7em;
+    font-size: 1.2em;
+}    
+    
 }
 
 
@@ -104,7 +109,7 @@
 
 @media screen and (min-width: 992px){
   .tguide{
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 
   #overskrift h1{
@@ -118,29 +123,33 @@
       text-align: center;
       font-size: 4vw;
       box-shadow: 5px 5px 7px black;
-      margin-left: 10em;
-      margin-right: 10em;
+      margin-left: 8em;
+      margin-right: 8em;
       margin-bottom: 1em;
-      border-style: 10px;
-      padding-top: 0.6em;
-      padding-bottom: 0.6em;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
 
   }
 
   #guide{
     grid-area: guide;
-    margin: -2em 3em 2em 3em;
-    padding-bottom: 1em;
+    margin: -6em 3em 2em 3em;
+    padding: 2em 0em;
     font-size: 1.2em;
     border-color: black;
-    border-style: hidden hidden solid hidden;
+    border-style: solid hidden solid hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         ". tekst1 tekst2 tekst3 ."
-        ;
-
+        ;  
+      
   }
+
+#produkt p {
+    margin: 1em 13em 2em 13em;
+    font-size: 1.5vw;
+}    
 
 }
 
@@ -191,29 +200,6 @@ margin-right: 2vw;
 .navbar {
     margin-right: 5em;
 }
-
-/*
-@media screen and (min-width: 800px){
-    #pagewrap
-      display: grid;
-          grid-template-columns:
-          grid-template-rows:
-          grid-template-areas:
-
-}
-
-
-
-@media screen and (min-width: 1000px){
-    #pagewrap
-      display: grid;
-          grid-template-columns:
-          grid-template-rows:
-          grid-template-areas:
-
-}
-*/
-
 
 html{
   text-size-adjust: 3vw;
@@ -269,11 +255,12 @@ footer a:hover{
 
 .tguide{
   text-align: left;
+  font-size: 1.5vw;
 }
 
 .hero{
-  margin-top:
-  grid-area: hero;
+  padding: 15em;
+  grid-area: hero; 
   min-height: 60vh;
   width: 100%;
   display: flex;
@@ -290,16 +277,6 @@ footer a:hover{
 }
 
 }
-/*
-#menu li {
-    display: inline;
-    padding: 5px;
-    margin-bottom: 5px;
-    vertical-align: middle;
-    background-color: black;
-    font-size: 3em;
-}*/
-
 
 
 .hero h2{
@@ -322,14 +299,6 @@ header {
   text-align: center;
     position: fixed;
 }
-/**
-#globe {
-    max-height: 10px;
-    max-width: 10px;
-    float: right;
-}
-**/
-
 
 div header nav li{
   background-color:rgb(0,0,0) ;opacity: 0.5;
@@ -380,15 +349,11 @@ div header nav li a: hover{
   grid-area: produkt;
 }
 
-#produkt p{
-    margin: 1.7em;
-    font-size: 1.2em;
-}
 
 #sup{
   grid-area: sup;
   align-content: center center;
-
+  margin 1em 0em;
 }
 
 #sbillede {
@@ -398,6 +363,7 @@ div header nav li a: hover{
     max-height: 110vh;
     margin-bottom: 3em;
     box-shadow: 3px 3px 5px black;
+    margin-top: 1.5em;
 }
 
  #video{
