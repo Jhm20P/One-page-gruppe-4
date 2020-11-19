@@ -1,7 +1,4 @@
-
-
-
-@media screen and (min-width: 0px){
+@media screen and (max-width: 799px) {
     #pagewrap
       display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -17,30 +14,260 @@
           ". sup sup sup ."
           "footer footer footer footer footer "
           ;
+          }
+
+  .tguide{
+    margin-left: 2em;
+  text-align: center;
+  }
+
+  #overskrift h1{
+      font-size: 8vw;
+}
+#knap {
+    grid-area: knap;
+    background-color: #247eb0;
+    color: white;
+    text-align: center;
+    font-size: 0.5vw;
+    box-shadow: 5px 5px 7px black;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vw;
+    padding: 2em;
 
 }
 
-/*
+#guide{
+  grid-area: guide;
+  margin: 0em 3em 2em 3em;
+  padding-bottom: 1em;
+  font-size: 1.2em;
+  border-color: black;
+  border-style: hidden hidden solid hidden;
+
+}
+#produkt p{
+    margin: 1.7em;
+    font-size: 1.2em;
+}
+
+.tekst1{
+  grid-area: tekst1;
+margin-left: 2vw;
+
+}
+
+.tekst2{
+grid-area: tekst2;
+margin-left: 2vw;
+
+
+}
+
+.tekst3{
+  grid-area: tekst3;
+margin-left: 2vw;
+
+}
+}
+
+
 @media screen and (min-width: 800px){
     #pagewrap
       display: grid;
-          grid-template-columns:
-          grid-template-rows:
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 5fr 1fr 4fr 5fr 1fr 9fr 5fr 1fr;
           grid-template-areas:
+          "head head head head head"
+          "hero heroh2 heroh2 heroh2  hero"
+          ". os os os ."
+          "video video video video video"
+          "video video video video video"
+          "guide guide guide guide guide"
+        ". knap knap knap ."
+          "produkt produkt produkt produkt produkt "
+          ". sup sup sup ."
+          "footer footer footer footer footer "
+          ;
+          }
 
+@media screen and (min-width: 800px){
+
+#knap {
+    grid-area: knap;
+    background-color: #247eb0;
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+    box-shadow: 5px 5px 7px black;
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-bottom: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+    
+    #overskrift h1{
+        font-size: 5vw;
+    }
+
+  #guide{
+    grid-area: guide;
+    margin: -6em 3em 2em 3em;
+    padding: 2em 0em;
+    font-size: 1.2em;
+    border-color: black;
+    border-style: solid hidden solid hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". tekst1 tekst2 tekst3 ."
+        ;
+
+  }
+
+  .tekst1{
+    grid-area: tekst1;
+
+  }
+
+  .tekst2{
+  grid-area: tekst2;
+  margin-left: 2vw;
+  margin-right: 2vw;
+
+  }
+
+  .tekst3{
+    grid-area: tekst3;
+
+  }
 }
 
 
+@media screen and (min-width: 992px){
 
-@media screen and (min-width: 1000px){
     #pagewrap
       display: grid;
-          grid-template-columns:
-          grid-template-rows:
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 5fr 1fr 4fr 5fr 1fr 9fr 5fr 1fr;
           grid-template-areas:
+          "head head head head head"
+          "hero heroh2 heroh2 heroh2  hero"
+          ". os os os ."
+          "video video video video video"
+          "guide guide guide guide guide "
+        ". knap knap knap ."
+          "produkt produkt produkt produkt produkt "
+          ". sup sup sup ."
+          "footer footer footer footer footer "
+          ;
+
+
 
 }
-*/
+
+@media screen and (min-width: 992px){
+  .tguide{
+    font-size: 1.5vw;
+  }
+
+  #overskrift h1{
+    font-size: 5vw;
+  }
+
+  #knap {
+      grid-area: knap;
+      background-color: #247eb0;
+      color: white;
+      text-align: center;
+      font-size: 4vw;
+      box-shadow: 5px 5px 7px black;
+      margin-left: 8em;
+      margin-right: 8em;
+      margin-bottom: 1em;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
+
+  }
+
+  #guide{
+    grid-area: guide;
+    margin: -6em 3em 2em 3em;
+    padding: 2em 0em;
+    font-size: 1.2em;
+    border-color: black;
+    border-style: solid hidden solid hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". tekst1 tekst2 tekst3 ."
+        ;
+
+  }
+
+#produkt p {
+    margin: 1em 13em 2em 13em;
+    font-size: 1.5vw;
+}
+
+.tekst1{
+  grid-area: tekst1;
+
+}
+
+.tekst2{
+grid-area: tekst2;
+margin-left: 2vw;
+margin-right: 2vw;
+
+}
+
+.tekst3{
+  grid-area: tekst3;
+
+}
+}
+
+#logo {
+    position: absolute;
+    right: 42%;
+    grid-area: logo;
+    padding-top: 1em;
+    background-color: #f8f9fa;
+    max-width: 100px;
+    margin-top: -0.5em;
+}
+
+.navbar-toggler {
+    grid-area: navbar;
+}
+
+#menu {
+    width: 100%;
+    background-color: #f8f9fa;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo navbar"
+        ;
+}
+
+.navbar {
+    margin-right: 5em;
+}
+
+html{
+  text-size-adjust: 3vw;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
   font-family: "Nunito";
   font-style: italic
@@ -51,7 +278,8 @@ body {
 }
 
 #pbillede{
-  max-width: 80%;
+  width: 80%;
+  max-width: 400px;
   max-height: auto;
   display: block;
   margin-left: auto;
@@ -66,25 +294,28 @@ body {
   margin-right: auto;
 }
 
-.responsiv{
-  max-width: 10%;
-  height: auto;
-  position: absolute;
-  bottom: auto;
 
+
+
+footer a {
+    color: black;
 }
 
-#footer{
-  position: relative;
+footer a:hover{
+    color: black;
+    font-style: italic;
 }
 
 .tekst{
   text-align: center;
 }
+
 .tguide{
   text-align: left;
 }
+
 .hero{
+  padding: 15em;
   grid-area: hero;
   min-height: 60vh;
   width: 100%;
@@ -92,6 +323,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Roboto";
+  color: white;
   background-image: url(sko2.webp);
   background-size: cover;
   background-position: center center;
@@ -99,27 +332,12 @@ body {
   background-attachment: fixed;
 }
 
-
-#menu {
- background-color: white;
-
 }
-/*
-#menu li {
-    display: inline;
-    padding: 5px;
-    margin-bottom: 5px;
-    vertical-align: middle;
-    background-color: black;
-    font-size: 3em;
-}*/
-
 
 
 .hero h2{
   font-family: "Roboto";
   grid-area: heroh2;
-  font-size: 4em;
   margin-top: 0;
   margin-bottom: 0.5em;
   color: white;
@@ -131,25 +349,11 @@ body {
 }
 
 header {
+    align-content: center center;
+    width: 100%;
   grid-area: head;
   text-align: center;
-  color: white;
-  opacity: 1;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  margin-right: 0em;
-}
-/**
-#globe {
-    max-height: 10px;
-    max-width: 10px;
-    float: right;
-}
-**/
-#logo {
-    width: 10px auto;
-    height: 10px auto;
-    float: left;
+    position: fixed;
 }
 
 div header nav li{
@@ -163,12 +367,12 @@ div header nav li a: hover{
 }
 
 #overskrift{
+  margin-top: 2em;
   grid-area: os;
   text-align: center;
 }
 
 #overskrift h1{
-  font-size: 2em;
   text-align: center;
   margin-bottom: auto;
 }
@@ -176,42 +380,20 @@ div header nav li a: hover{
 
 
 #produkt h3 {
+  margin: 0em 2em 1em 2em;
   text-align: center;
   font-size: 1.8em;
 }
 
 #overskrift p{
   margin-top: auto;
-  font-size: 0.9em;
-}
-
-#forhandler {
-
-}
-
-#guide{
-  grid-area: guide;
-  margin: 2em;
-  padding-bottom: 1em;
-  font-size: 1.2em;
-  border-color: black;
-  border-style: hidden hidden solid hidden;
-
+  font-size: 1.3em;
 }
 
 
-    #knap {
-        grid-area: knap;
-        background-color: #247eb0;
-        color: white;
-        text-align: center;
-        font-size: 2em;
-        box-shadow: 5px 5px 7px black;
-        margin-left: 3em;
-        margin-right: 3em;
-        margin-bottom: 1em;
-        border-style: 10px
-    }
+
+
+
 
 
 
@@ -223,26 +405,68 @@ div header nav li a: hover{
   grid-area: produkt;
 }
 
-#produkt p{
-    margin: 1.7em;
-    font-size: 1.2em;
-}
 
 #sup{
   grid-area: sup;
   align-content: center center;
+  margin 1em 0em;
+}
 
+#sbillede {
+    width: 100%;
+    max-width: 130px;
+    height:auto;
+    max-height: 110vh;
+    margin-bottom: 3em;
+    box-shadow: 3px 3px 5px black;
+    margin-top: 1.5em;
 }
 
  #video{
   grid-area: video;
+  margin: 0em 0em -2em 0em;
+  width: 100%;
+  height:auto;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+
 }
 
+.responsive-iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 75%;
+}
+
+
+.responsiv{
+  width: 10%;
+  max-width: 50px;
+  height: auto;
+}
 
 footer {
   grid-area: footer;
-    text-align: left;
     background-color: white;
+    border-style: solid;
     color: Black;
-    padding: 0.1em;
+    width: 100%;
+    height: 100%;
+    padding 0 10px;
+    bottom: 0px;
+    right 0px;
+    left: 0px;
+    padding-bottom: 3em;
 }
+
+footer li {
+
+
+
+
+
